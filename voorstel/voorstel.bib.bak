@@ -1,0 +1,43 @@
+% Encoding: windows-1252
+
+@Article{Sumra2018,
+  author  = {Husain Sumra},
+  title   = {Augmented reality explained: What is AR and what's coming next?},
+  journal = {Augmented reality explained: What is AR and what's coming next?},
+  year    = {2018},
+  url     = {https://www.wareable.com/ar/everything-you-need-to-know-about-augmented-reality},
+}
+
+@Article{Stanush2018,
+  author  = {Aaron Stanush},
+  title   = {Augmented Reality on the web is here},
+  journal = {Augmented Reality on the web is here},
+  year    = {2018},
+  url     = {https://www.fourkitchens.com/blog/immersive-technology/augmented-reality-web/},
+}
+
+@Article{Ali2018,
+  author  = {Reza Ali, Josh Carpenter},
+  title   = {Augmented reality on the web, for everyone},
+  journal = {Augmented reality on the web, for everyone},
+  year    = {2018},
+  url     = {https://www.blog.google/products/google-ar-vr/augmented-reality-web-everyone/},
+}
+
+@Article{Medley2018,
+  author  = {Joseph Medley},
+  title   = {Augmented reality for the web},
+  journal = {Augmented reality for the web},
+  year    = {2018},
+  url     = {https://developers.google.com/web/updates/2018/06/ar-for-the-web},
+}
+
+@Article{Etienne2017,
+  author  = {Jerome Etienne},
+  title   = {Creating Augmented Reality with AR.js and A-Frame},
+  journal = {Creating Augmented Reality with AR.js and A-Frame},
+  year    = {2017},
+  url     = {https://aframe.io/blog/arjs/},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
