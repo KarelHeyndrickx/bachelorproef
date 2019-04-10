@@ -9,7 +9,7 @@
 
 Het is al geen geheim meer dat AR op het web zijn intrede doet in de technologiewereld. Er zijn een tal van opportuniteiten en manieren waar de juiste bedrijven hun slag mee kunnen slaan. Maar waar wat komt hier allemaal bij kijken en hoe kan zo'n bedrijf hiermee aan de slag gaan? 
 
-In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Op welk type apparaat moet ik mij als bedrijf focussen? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
+In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Moet ik als bedrijf mij op een bepaald type apparaat focussen? Zoja, op welk type? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
 
 \section{Google ARCore vs Apple ARKit}
 \label{sec:google-arcore-vs-apple-arkit}
@@ -38,45 +38,62 @@ Ondanks de twee AR platformen voornamelijk op elkaar lijken, zijn toch er enkele
 
 \subsection{Compatibiliteit en marktaandeel}
 
-Een andere interessante factor die uw voorkeursplatform kan beïnvloeden is de compatibiliteit en het marktaandeel. Zoals te zien in (STATISTIEKEN) bevat Android in het derde kwartaal van 2018 meer dan 85\% marktaandeel over de gebruikte besturingssystemen. Dit klinkt direct als slecht nieuws voor Apple maar van die 85\% zijn er miljarden gebruikers die Android toestellen kopen maar die door één van de volgende condities AR simpelweg niet kunnen te zien krijgen. 
+Een andere interessante factor die uw voorkeursplatform kan beïnvloeden is de compatibiliteit en het marktaandeel. Zoals te zien in ~\textcite{IDC2018} bevat Android in het derde kwartaal van 2018 meer dan 85\% marktaandeel over de gebruikte besturingssystemen. Dit klinkt direct als slecht nieuws voor Apple maar van die 85\% zijn er miljarden gebruikers die Android toestellen kopen maar die door één van de volgende condities AR simpelweg niet werkende kunnen krijgen. 
 
 \textbf{Hardware:}
-Opdat het hierboven vermeld SLAM process goed uitgevoerd kan worden, moet ARCore compatibel zijn met de camera, accelerometer en gyroscoop van het apparaat. Dit is bij een groot deel van de Android toestellen niet het geval. In tegenstelling tot bij Apple, waar elke verkrijgbare iPhone/iPad in de winkel reeds voldoet aan de hardwarevereisten ARKit. 
+Opdat het hierboven vermeld SLAM proces goed uitgevoerd kan worden, moet ARCore compatibel zijn met de camera, accelerometer en gyroscoop van het apparaat. Dit is bij een groot deel van de Android toestellen niet het geval. In tegenstelling tot bij Apple, waar elke verkrijgbare iPhone, iPad of iPod in de winkel reeds voldoet aan de hardwarevereisten ARKit. Om te weten of uw apparaat hier aan voldoet is er een schema opgesteld. ~\autocite{GoogleDevices2019}
 
 \textbf{Reeds geïnstalleerd:}
-Daarnaast moeten Android gebruikers alsook ARCore downloaden op de Play Store alvorens ze AR kunnen ervaren. Bij iPhones/iPads staat dit standaard op het toestel dus ook dit is geen probleem. Dit klinkt niet zo'n grote moeite maar het beperkt wel wederom het aantal toestellen die AR kunnen gebruiken omdat sommigen het gewoon niet kunnen downloaden. Android laat in sommige gevallen het toestel gewoon niet toe het te downloaden. 
+Daarnaast moeten Android gebruikers alsook ARCore downloaden op de Play Store alvorens ze AR kunnen ervaren. Bij iPhones, iPads en iPods staat dit standaard op het toestel dus ook dit is geen probleem. Dit klinkt niet zo'n grote moeite maar het beperkt wel wederom het aantal toestellen die AR kunnen gebruiken omdat sommigen niet in staat zijn ARCore te downloaden. Google laat in sommige gevallen het toestel dit gewoon niet toe. 
  
 \section{State of the Multinationals}
 \label{sec:state-of-the-multinationals}
   
 
 \subsection{Google}
-De tech giant Google heeft zeker niet stil gezeten gedurende de race en heeft op dinsdag 8 mei 2018 heel wat interessante onderwerpen aan bod gebracht op hun event Google I/O. Een van die onderwerpen was het immersive web.
+De tech giant Google heeft zeker niet stil gezeten gedurende de race en heeft op dinsdag 8 mei 2018 heel wat interessante onderwerpen aan bod gebracht op hun evenement Google I/O. Een van die onderwerpen was het immersive web.
 \textbf{Immersive web:} 
 collectie van de opkomende technologie (VR en AR). Anders gezegd: eender wat dat het web diepte, volume, schaal en plaats geeft.
 
-Hierbij wou Google echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is. 
+Hierbij wou Google echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is en het om de hoek staat. 
  
 \textit{``If you start using the AR/VR technologies now, they’ll be shipping in stable browsers by the time you’re comfortable using them``}
 
-Google liet op dit event een aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen via het artikel (ARTIKEL). Een van die voorbeelden was een chacmool statue. De chacmool is een standbeeld die u kan met AR kan plaatsen in uw omgeving en die ook interactie biedt. Indien u op een bepaald punt tikt, toont het meer informatie over het standbeeld. 
-
-Een ander testbaar voorbeeld van Google is raadpleegbaar via de artikels %~\textcite{Stanush2018} en ~\textcite{Ali2018}. 
-Dit project is een voorbeeld van een artikelpagina zoals Wikipedia waarin er een astronaut wordt beschreven en weergegeven via AR. Desondanks dit project downloadbaar is via Github, is dit niet zo simpel te begrijpen aangezien dit niet gedocumenteerd is. 
+Google had hierbij WebXR geïntroduceerd, de vervanger van het verouderde WebVR API (de technologie dat het mogelijk maakt om Virtual Reality in de browser te zien). WebXR werd gebouwd aan de hand van veel feedback en legt de VR- en AR functionaliteiten bloot aan web ontwikkelaars. Sinds het evenement is WebXR enkel en alleen nog maar beschikbaar geweest in Chrome Canary, een speciale versie van Google Chrome.
  
- Daarnaast heeft Google ook nog een verouderde handleiding 
+Google liet op dit evenement ook aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen via het artikel ~\textcite{Medley2018}. Een van die voorbeelden was een chacmool statue. Het chac mool is een standbeeld die u kan met AR kan plaatsen in uw omgeving en die vervolgens ook interactie biedt. Indien u op een bepaald punt tikt op het beeld, toont het meer informatie over het standbeeld. 
+
+Een ander testbaar voorbeeld van Google is raadpleegbaar via de artikels ~\textcite{Stanush2018} en ~\textcite{Ali2018}. 
+Dit project is een voorbeeld van een artikelpagina zoals Wikipedia waarin er een astronaut wordt beschreven en weergegeven via AR. Desondanks dit project downloadbaar is via Github, is dit niet zomaar te begrijpen aangezien dit niet gedocumenteerd is. 
+ 
+ Daarnaast heeft Google ook nog een handleiding. Deze lijkt op eerste zicht perfect maar bevat bij nader inzien een aantal moeilijkheden en vragen. 
+ In deze handleiding leert u hoe u gebruik maakt van de WebXR API, hoe een vlakte kan gevonden worden met zogenaamde AR hit tests en hoe een 3D model kan geladen en gesynchroniseerd worden met de echte wereld. Tijdens het werkende proberen krijgen van deze handleiding werd al snel duidelijk dat niet eenvoudig is. Aangezien er op het moment dat de handleiding uitgebracht werd er nog steeds veel aanpassingen gebeurden aan de WebXR API zijn de versies van Chrome Canary boven 72 niet in staat deze handleiding uit te voeren. U moet dus eerst een verouderde versie van Chrome Canary downloaden, wat niet meer te vinden is op de Play Store. Hiervoor moet u wat graven op het internet. Dit op zich is niet zo moeilijk maar het principe van een verouderde versie te downloaden creëert de volgende vraag: is deze handleiding dan nog nuttig? Het antwoord hierop is op dit moment onduidelijk. Om alsnog de handleiding te volgen moet uw toestel aan de hierboven vermelde compatibiliteitsvoorwaarden voldoen en zet u een Web Server op waarop u uw website gaat maken. 
 
 
 \subsection{Apple}
 
-blablaiOS
+Indien uw ultieme doel het plaatsen van een 3D object in de wereld met de juiste belichting, schaduwen en grootte, of anders gezegd enkel het visualiseren, dan heeft Apple al de perfecte oplossing voor u. Apple heeft namelijk AR Quick Look gecreëerd, een functionaliteit die ook gebruikt maakt van WebXR API en op eender welke iPhone, iPad of iPod werkt indien het iOS 12 draait. 
 
+Sinds begin de zomer van 2018 kan er met AR Quick Look op een heel vlotte manier voor de gebruiker een object geplaatst worden in de wereld. Men kan zo'n object plaatsen door op een website te klikken op een placeholder van het object (een foto van het object die de downloadlink naar het .usdz bestand bevat). Verder verloopt het visualiseren van het object heel soepel en is het implementeren voor ontwikkelaars heel voornaam omdat Apple alle belangrijkste aspecten reeds geïmplementeerd heeft. Aspecten zoals object placement with device movement, plane detection (herkennen vlaktes), rotation manipulation, move gestures, object scaling, shadows en nog veel meer. 
 
-De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+Om dit uit te voeren, ondersteunt AR Quick Look .usdz bestanden, een nieuw bestandsformaat gecreëerd door Apple. Een .usdz bestand combineert het model van het object en de texturen van het object zodat er in uw app of website enkel maar een .usdz bestand toegevoegd moet worden om een object te visualiseren. 
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\TeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+Hoe u als ontwikkelaar verder aan de slag kan gaan met dit bestandstype en waar u op moet letten wordt verder uitgelegd op de webpagina van~\textcite{Apple2018}.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+\textbf{Nadeel:}
 
-\lipsum[7-20]
+Het nadeel van AR Quick Look is dat het buiten het visualiseren, geen aangepaste of unieke interactie biedt. Er kan dus bijvoorbeeld niet op geklikt worden om extra informatie toe te voegen. Het is ook niet mogelijk dit zelf te ontwikkelen aangezien Apple dit volgens hun gewoontes afgeschermd heeft. 
+
+\section{Een derde optie}
+\label{sec:een-derde-optie}
+
+Desondanks de technologieën en implementeerbaarheid van de twee tech giants Google en Apple zijn er ook nog enkele andere opties. Een daarvan is het product 8th Wall Web van het bedrijf 8th Wall. Hierbij kan u sinds 25 februari 2019 tegen een bepaalde prijs op een webplatform een Web AR applicatie ontwikkelen die u vervolgens op uw website kan plaatsen. Volgens de beschikbare demo's kan er met hun product extra interactie geïmplementeerd worden zoals het smijten van een object of het stappen door een portaal (die u naar een andere wereld brengt). Echter blijken deze AR ervaringen niet zo soepel te zijn als de simpelere visualisatietechniek van Apple en Google. Hoe dit product gebruikt wordt in deze bachelorproef niet verder uitgelicht 
+
+%De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+
+%Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\TeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
+%Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+
+%\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+
+%\lipsum[7-20]

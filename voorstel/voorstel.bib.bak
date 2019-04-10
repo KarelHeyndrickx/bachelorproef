@@ -1,11 +1,11 @@
 % Encoding: windows-1252
 
-@Article{Sumra2018,
-  author  = {Husain Sumra},
-  title   = {Augmented reality explained: What is AR and what's coming next?},
-  journal = {Augmented reality explained: What is AR and what's coming next?},
+@Article{Paladini2018,
+  author  = {Marco Paladini},
+  title   = {3 DIFFERENT TYPES OF AR EXPLAINED: MARKER-BASED, MARKERLESS \& LOCATION},
+  journal = {3 DIFFERENT TYPES OF AR EXPLAINED: MARKER-BASED, MARKERLESS \& LOCATION},
   year    = {2018},
-  url     = {https://www.wareable.com/ar/everything-you-need-to-know-about-augmented-reality},
+  url     = {https://www.blippar.com/blog/2018/08/14/marker-based-markerless-or-location-based-ar-different-types-of-ar},
 }
 
 @Article{Stanush2018,
