@@ -7,18 +7,18 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Het is al geen geheim meer dat AR op het web zijn intrede doet in de technologiewereld. Er zijn een tal van opportuniteiten en manieren waar de juiste bedrijven hun slag mee kunnen slaan. Maar waar wat komt hier allemaal bij kijken en hoe kan zo'n bedrijf hiermee aan de slag gaan? 
+Het is al geen geheim meer dat AR op het web zijn intrede doet in de technologiewereld. Er zijn tal van opportuniteiten en manieren waar de juiste bedrijven hun slag mee kunnen slaan. Maar wat komt hier allemaal bij kijken en hoe kan zo'n bedrijf hiermee aan de slag gaan? 
 
-In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Moet ik als bedrijf mij op een bepaald type apparaat focussen? Zoja, op welk type? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
+In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Moet ik als bedrijf mij op een bepaald type apparaat focussen? Zoja, op welk type? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR-ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
 
 \section{Google ARCore vs Apple ARKit}
 \label{sec:google-arcore-vs-apple-arkit}
 
-Google en Apple zijn twee extreem grote bedrijven die heel veel investeren in hun race om de beste AR visualisatie te bieden op smartphones die natuurlijk hun besturingssysteem draaien. Beiden hebben een AR ontwikkelingsplatform gecreëerd die in grote lijnen gelijk zijn maar toch op sommige vlakken zich van elkaar onderscheiden. Kiezen met welk platform er aan de slag wordt gegaan is dus een heel belangrijke stap. 
+Google en Apple zijn twee extreem grote bedrijven die heel veel investeren in de race om de beste AR-visualisatie te bieden op smartphones die natuurlijk hun besturingssysteem draaien. Beiden hebben een AR-ontwikkelingsplatform gecreëerd die in grote lijnen gelijk zijn maar toch op sommige vlakken zich van elkaar onderscheiden. Bij Google is dit ARCore en bij Apple is dit ARKit. Kiezen met welk platform er aan de slag wordt gegaan is dus een heel belangrijke stap. 
 
 \subsection{Gemeenschappelijke features}
 
-De essentiële features in AR zoals light estimation, environmental understanding en motion tracking zijn bij beide concurrenten uiteraard geïmplementeerd maar hebben  hier en daar toch wat verschillen. 
+De meest essentiële features in AR zoals light estimation, environmental understanding en motion tracking zijn bij beide concurrenten uiteraard geïmplementeerd maar hebben  hier en daar toch wat verschillen. 
 
 \textbf{Light Estimation}
 
@@ -26,56 +26,56 @@ Beeld u eens in dat u met uw smartphone in een donkere ruimte bent. Uw helderhei
 
 \textbf{Environmental understanding}
 
-Environmental understanding is het proces voor het zien, verwerken en gebruiken van zichtbare informatie in de omgeving van het apparaat. Hierbij gaat het apparaat horizontale en verticale vlaktes (planes) gaan detecteren zodat het vervolgens 3D objecten daarop kan plaatsen.
+Environmental understanding is het proces voor het zien, verwerken en gebruiken van zichtbare informatie in de omgeving van het apparaat. Hierbij gaat het apparaat horizontale en verticale vlakten (planes) gaan detecteren zodat het vervolgens daarop de 3D-objecten kan plaatsen.
 
 \textbf{Motion tracking}
 
-Motion tracking zorgt er voor dat wanneer er bewogen wordt met het apparaat, terwijl er al een object in de omgeving geprojecteerd wordt, het object stil blijft staan en u een soepele ervaring beleeft. Op die manier kan u als gebruiker bijvoorbeeld in uw kamer rondwandelen om een geprojecteerd meubelstuk te bekijken vanuit alle perspectieven. Het proces dat dit mogelijk maakt is Simultaneous Localization And Mapping, ook wel SLAM genoemd. Hierbij worden de sensoren van het apparaat zoals de camera, de dieptesensoren, de lichtsensoren en de accelerometer gebruikt om data op te slaan over de omgeving en zich te oriënteren in de echte wereld. ARCore en ARKit gebruiken al die informatie om zo op een correcte manier het 3D object te projecteren in de echte wereld. 
+Motion tracking zorgt er voor dat wanneer er bewogen wordt met het apparaat, terwijl er al een object in de omgeving geprojecteerd wordt, het object stil blijft staan en u een soepele ervaring beleeft. Op die manier kan u als gebruiker bijvoorbeeld in uw kamer rondwandelen om een geprojecteerd meubelstuk te bekijken vanuit alle perspectieven. Het proces dat dit mogelijk maakt is Simultaneous Localization And Mapping, ook wel SLAM genoemd. Hierbij worden de sensoren van het apparaat zoals de camera, de dieptesensoren, de lichtsensoren en de accelerometer gebruikt om data op te slaan over de omgeving en zich te oriënteren in de echte wereld. ARCore en ARKit gebruiken al die informatie om zo op een correcte manier het 3D-object te projecteren in de echte wereld. 
 
 \subsection{De verschillen}
 
-Ondanks de twee AR platformen voornamelijk op elkaar lijken, zijn toch er enkele subtiele verschillen. Een voorbeeld hiervan is de mapping (lees: het opslaan van data). ARKit gebruikt een zogenaamde 'sliding window' dat maar een beperkte hoeveelheid locatie data opslaat i.v.m. het recent zichtbaar verleden. ARCore daarentegen heeft de mogelijkheid om veel meer data te mappen. Dit wilt zeggen dat de gemapte omgeving veel sneller uitbreid met ARCore. ARKit zou dan wel weer wat accurater zijn in het onderscheiden van de vlaktes in de omgeving. 
+Ondanks het feit dat de twee AR-platformen voornamelijk op elkaar lijken, zijn toch er enkele subtiele verschillen. Een voorbeeld hiervan is de mapping (lees: het opslaan van data). ARKit gebruikt een zogenaamde 'sliding window' dat maar een beperkte hoeveelheid locatiedata opslaat i.v.m. het recent zichtbaar verleden. ARCore daarentegen heeft de mogelijkheid om veel meer data te mappen. Dit wilt zeggen dat de gemapte omgeving veel sneller uitbreid met ARCore. ARKit zou dan wel weer wat accurater zijn in het onderscheiden van de vlakten in de omgeving. 
 
 \subsection{Compatibiliteit en marktaandeel}
 
-Een andere interessante factor die uw voorkeursplatform kan beïnvloeden is de compatibiliteit en het marktaandeel. Zoals te zien in ~\textcite{IDC2018} bevat Android in het derde kwartaal van 2018 meer dan 85\% marktaandeel over de gebruikte besturingssystemen. Dit klinkt direct als slecht nieuws voor Apple maar van die 85\% zijn er miljarden gebruikers die Android toestellen kopen maar die door één van de volgende condities AR simpelweg niet werkende kunnen krijgen. 
+Een andere interessante factor die uw voorkeursplatform kan beïnvloeden is de compatibiliteit en het marktaandeel. Zoals te zien in ~\textcite{IDC2018} bevat Android in het derde kwartaal van 2018 meer dan 85\% marktaandeel van de gebruikte besturingssystemen. Dit klinkt direct als slecht nieuws voor Apple maar van die 85\% zijn er miljarden gebruikers die Android-toestellen kopen maar die door één van de volgende condities AR simpelweg niet werkende kunnen krijgen. 
 
 \textbf{Hardware:}
-Opdat het hierboven vermeld SLAM proces goed uitgevoerd kan worden, moet ARCore compatibel zijn met de camera, accelerometer en gyroscoop van het apparaat. Dit is bij een groot deel van de Android toestellen niet het geval. In tegenstelling tot bij Apple, waar elke verkrijgbare iPhone, iPad of iPod in de winkel reeds voldoet aan de hardwarevereisten ARKit. Om te weten of uw apparaat hier aan voldoet is er een schema opgesteld. ~\autocite{GoogleDevices2019}
+Opdat het hierboven vermeld SLAM proces goed uitgevoerd kan worden, moet ARCore compatibel zijn met de camera, accelerometer en gyroscoop van het apparaat. Dit is bij een groot deel van de Android toestellen niet het geval. In tegenstelling tot bij Apple, waar elke verkrijgbare iPhone, iPad of iPod in de winkel reeds voldoet aan de hardwarevereisten van ARKit. Om te weten of uw apparaat voldoet aan de eisen van ARCore is er een schema opgesteld waarin alle ondersteunde toestellen te vinden zijn. ~\autocite{GoogleDevices2019}
 
 \textbf{Reeds geïnstalleerd:}
-Daarnaast moeten Android gebruikers alsook ARCore downloaden op de Play Store alvorens ze AR kunnen ervaren. Bij iPhones, iPads en iPods staat dit standaard op het toestel dus ook dit is geen probleem. Dit klinkt niet zo'n grote moeite maar het beperkt wel wederom het aantal toestellen die AR kunnen gebruiken omdat sommigen niet in staat zijn ARCore te downloaden. Google laat in sommige gevallen het toestel dit gewoon niet toe. 
+Daarnaast moeten Android gebruikers ook ARCore downloaden op de Play Store alvorens ze AR kunnen ervaren. Bij iPhones, iPads en iPods staat dit standaard op het toestel dus ook dit is geen probleem. Dit klinkt niet zo'n grote moeite maar het beperkt wel wederom het aantal toestellen die AR kunnen gebruiken omdat sommigen niet in staat zijn ARCore te downloaden. Google laat in sommige gevallen het toestel dit gewoon niet toe. 
  
 \section{State of the Multinationals}
 \label{sec:state-of-the-multinationals}
   
 
 \subsection{Google}
-De tech giant Google heeft zeker niet stil gezeten gedurende de race en heeft op dinsdag 8 mei 2018 heel wat interessante onderwerpen aan bod gebracht op hun evenement Google I/O. Een van die onderwerpen was het immersive web.
+De tech giant Google heeft zeker niet stil gezeten gedurende de AR-race en heeft op dinsdag 8 mei 2018 heel wat interessante onderwerpen aan bod gebracht op hun evenement Google I/O. Een van die onderwerpen was het immersive web.
 
 \textbf{Immersive web:} 
 collectie van de opkomende technologie (VR en AR). Anders gezegd: eender wat dat het web diepte, volume, schaal en plaats geeft.
 
-Hierbij wou Google echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is en het om de hoek staat. 
+Google wou hier echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is en direct om de hoek staat. Een quote van op het evenement:
  
 \textit{``If you start using the AR/VR technologies now, they’ll be shipping in stable browsers by the time you’re comfortable using them``}
 
-Google had hierbij WebXR geïntroduceerd, de vervanger van het verouderde WebVR API (de technologie dat het mogelijk maakt om Virtual Reality in de browser te zien). WebXR werd gebouwd aan de hand van veel feedback en legt de VR- en AR functionaliteiten bloot aan web ontwikkelaars. Sinds het evenement is WebXR enkel en alleen nog maar beschikbaar geweest in Chrome Canary, een speciale versie van Google Chrome.
+Google had op Google I/O WebXR geïntroduceerd, de vervanger van de verouderde WebVR API (de technologie die het mogelijk maakt om Virtual Reality in de browser te zien). WebXR werd gebouwd aan de hand van veel feedback en stelt de VR- en AR functionaliteiten beschikbaar voor web ontwikkelaars. Sinds het evenement is WebXR enkel en alleen nog maar beschikbaar geweest in Chrome Canary, een speciale versie van Google Chrome.
  
-Google liet op dit evenement ook aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen via het artikel ~\textcite{Medley2018}. Een van die voorbeelden was een chacmool statue. Het chac mool is een standbeeld die u kan met AR kan plaatsen in uw omgeving en die vervolgens ook interactie biedt. Indien u op een bepaald punt tikt op het beeld, toont het meer informatie over het standbeeld. 
+Google liet op dit evenement ook een aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen. Deze voorbeelden zijn te vinden in het artikel van ~\textcite{Medley2018}. Een van die voorbeelden was met het Chacmool statue. Het Chacmool is een standbeeld dat u met AR kan plaatsen in uw omgeving en dat vervolgens ook interactie biedt. Indien u op een bepaald punt tikt op het beeld, toont het meer informatie over het standbeeld. 
 
-Een ander testbaar voorbeeld van Google is raadpleegbaar via de artikels ~\textcite{Stanush2018} en ~\textcite{Ali2018}. 
-Dit project is een voorbeeld van een artikelpagina zoals Wikipedia waarin er een astronaut wordt beschreven en weergegeven via AR. Desondanks dit project downloadbaar is via Github, is dit niet zomaar te begrijpen aangezien dit niet gedocumenteerd is. 
+Een ander testbaar voorbeeld van Google is raadpleegbaar via de artikels van ~\textcite{Stanush2018} en ~\textcite{Ali2018}. 
+Dit project is een voorbeeld van een artikelpagina zoals Wikipedia waarin er een astronaut wordt beschreven en weergegeven via AR. Hoewel dit project downloadbaar is via Github, is dit niet zo eenvoudig te begrijpen, aangezien het niet gedocumenteerd is. 
  
  Daarnaast heeft Google ook nog een handleiding. Deze lijkt op eerste zicht perfect maar bevat bij nader inzien een aantal moeilijkheden en vragen. 
- In deze handleiding leert u hoe u gebruik maakt van de WebXR API, hoe een vlakte kan gevonden worden met zogenaamde AR hit tests en hoe een 3D model kan geladen en gesynchroniseerd worden met de echte wereld. Tijdens het werkende proberen krijgen van deze handleiding werd al snel duidelijk dat niet eenvoudig is. Aangezien er op het moment dat de handleiding uitgebracht werd er nog steeds veel aanpassingen gebeurden aan de WebXR API zijn de versies van Chrome Canary boven 72 niet in staat deze handleiding uit te voeren. U moet dus eerst een verouderde versie van Chrome Canary downloaden, wat niet meer te vinden is op de Play Store. Hiervoor moet u wat graven op het internet. Dit op zich is niet zo moeilijk maar het principe van een verouderde versie te downloaden creëert de volgende vraag: is deze handleiding dan nog nuttig? Het antwoord hierop is op dit moment onduidelijk. Om alsnog de handleiding te volgen moet uw toestel aan de hierboven vermelde compatibiliteitsvoorwaarden voldoen en zet u een Web Server op waarop u uw website gaat maken. 
+ In deze handleiding leert u hoe u gebruik maakt van de WebXR API, hoe een vlakte kan gevonden worden met zogenaamde AR hit tests en hoe een 3D model kan geladen en gesynchroniseerd worden met de echte wereld. Tijdens het werkende proberen krijgen van deze handleiding werd al snel duidelijk dat niet eenvoudig is. Aangezien er op het moment dat de handleiding uitgebracht werd er nog steeds veel aanpassingen gebeurden aan de WebXR API zijn de versies van Chrome Canary boven 72 niet in staat deze handleiding uit te voeren. U moet dus eerst een verouderde versie van Chrome Canary downloaden, wat niet meer te vinden is op de Play Store. Hiervoor moet u wat graven op het internet. Dit op zich is niet zo moeilijk maar het principe van een verouderde versie te downloaden creëert natuurlijk de volgende vraag: is deze handleiding dan nog nuttig? Het antwoord hierop is op dit moment onduidelijk. Om alsnog de handleiding te volgen moet uw toestel aan de hierboven vermelde compatibiliteitsvoorwaarden voldoen en zet u een Web Server op waarop u uw website gaat maken. 
 
 
 \subsection{Apple}
 
 Indien uw ultieme doel het plaatsen van een 3D object in de wereld met de juiste belichting, schaduwen en grootte, of anders gezegd enkel het visualiseren, dan heeft Apple al de perfecte oplossing voor u. Apple heeft namelijk AR Quick Look gecreëerd, een functionaliteit die ook gebruikt maakt van WebXR API en op eender welke iPhone, iPad of iPod werkt indien het iOS 12 draait. 
 
-Sinds begin de zomer van 2018 kan er met AR Quick Look op een heel vlotte manier voor de gebruiker een object geplaatst worden in de wereld. Men kan zo'n object plaatsen door op een website te klikken op een placeholder van het object (een foto van het object die de downloadlink naar het .usdz bestand bevat). Verder verloopt het visualiseren van het object heel soepel en is het implementeren voor ontwikkelaars heel voornaam omdat Apple alle belangrijkste aspecten reeds geïmplementeerd heeft. Aspecten zoals object placement with device movement, plane detection (herkennen vlaktes), rotation manipulation, move gestures, object scaling, shadows en nog veel meer. 
+Sinds begin de zomer van 2018 kan er met AR Quick Look op een heel vlotte manier voor de gebruiker een object geplaatst worden in de wereld. Men kan zo'n object plaatsen door op een website te klikken op een placeholder van het object (een foto van het object die de downloadlink naar het .usdz bestand bevat). Verder verloopt het visualiseren van het object heel soepel en is het implementeren voor ontwikkelaars heel aangenaam omdat Apple alle belangrijkste aspecten reeds geïmplementeerd heeft. Aspecten zoals object placement with device movement, plane detection (herkennen vlakten), rotation manipulation, move gestures, object scaling, shadows en nog veel meer. 
 
 Om dit uit te voeren, ondersteunt AR Quick Look .usdz bestanden, een nieuw bestandsformaat gecreëerd door Apple. Een .usdz bestand combineert het model van het object en de texturen van het object zodat er in uw app of website enkel maar een .usdz bestand toegevoegd moet worden om een object te visualiseren. 
 
@@ -83,7 +83,7 @@ Hoe u als ontwikkelaar verder aan de slag kan gaan met dit bestandstype en waar 
 
 \textbf{Nadeel:}
 
-Het nadeel van AR Quick Look is dat het buiten het visualiseren, geen aangepaste of unieke interactie biedt. Er kan dus bijvoorbeeld niet op geklikt worden om extra informatie toe te voegen. Het is ook niet mogelijk dit zelf te ontwikkelen aangezien Apple dit volgens hun gewoontes afgeschermd heeft. 
+Het nadeel van AR Quick Look is dat het buiten het visualiseren, het echter geen aangepaste of unieke interactie biedt. Er kan dus bijvoorbeeld niet op geklikt worden om extra informatie toe te voegen. Het is ook niet mogelijk dit zelf te ontwikkelen aangezien Apple dit volgens hun gewoontes afgeschermd heeft. 
 
 \section{Een derde optie}
 \label{sec:een-derde-optie}
