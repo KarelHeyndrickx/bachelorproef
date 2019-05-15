@@ -9,7 +9,24 @@
 
 Het is al geen geheim meer dat AR op het web zijn intrede doet in de technologiewereld. Er zijn tal van opportuniteiten en manieren waar de juiste bedrijven hun slag mee kunnen slaan. Maar wat komt hier allemaal bij kijken en hoe kan zo'n bedrijf hiermee aan de slag gaan? 
 
-In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Moet ik als bedrijf mij op een bepaald type apparaat focussen? Zoja, op welk type? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR-ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
+In dit hoofdstuk wordt er verder gegaan op de huidige stand van zaken omtrent AR op het web. Hoe werkt AR precies? Welke types AR zijn er? Moet ik als bedrijf mij op een bepaald type apparaat focussen? Zoja, op welk type? Wat is het verschil tussen ARCore van Google en ARKit Apple? Wat zijn vervolgens de mogelijkheden wanneer ik als bedrijf een AR-ervaring wil creëren voor gebruikers op een iOS apparaat en wat zijn de mogelijkheden wanneer ik dat wil doen op een apparaat zoals Android? Zijn er ook andere opties?
+
+\section{Types AR}
+\label{sec:types-ar}
+Wanneer een gebruiker wil interageren met een gegenereerde wereld zijn er eerst nog enkele vragen die de AR applicatie moet beantwoorden. Wat moet er precies getoond worden in de gegenereerde wereld en waar moet het getoond worden? Hoe deze vragen beantwoord worden hangt af van het type van de AR applicatie. ~\textcite{Paladini2018} haalt aan dat er drie types AR zijn. 
+
+\textbf{Markerbased AR}
+
+In sommige gevallen moet de applicatie weten naar wat hij kijkt. Dit wordt marker based AR genoemd. De applicatie heeft dan een merkteken nodig in de echte wereld om vervolgens hier de digitale wereld op te tonen. Zo'n merkteken is vaak een prent met bijvoorbeeld het logo van een bedrijf erop. Eenmaal de applicatie dit merkteken via de camera herkent, kan het bijvoorbeeld ook zien dat het punt gedraaid is en dus ook het object draaien en er op plaatsen. Er staan online enkele handleidingen hoe het mogelijk is marker based AR te implementeren in een website. Een voorbeeld hiervan is te volgen in het artikel \textcite{Etienne2017}. Hier wordt er uitgelegd hoe een ontwikkelaar aan zijn eigen website een marker based AR functie kan toevoegen, hiervan het model dat getoond wordt op het merkteken kan veranderen en het merkteken waarop het model staat kan veranderen.
+
+\textbf{Markerless AR}
+
+In een andere situatie is zo'n referentiepunt echter niet nodig en wordt de ruimte rond de gebruiker gescand om te wereld te kunnen herkennen en hier vervolgens objecten in te visualiseren. Hierbij wordt er gesproken over markerless AR. Een voorbeeld hiervan is de IKEA Place app waarbij u zonder merkteken het meubelstuk in de omgeving rond u kan plaatsen en vervolgens kan bewegen naar de geschikte plaats.
+
+\textbf{Location based AR}
+Bij het derde type moet de applicatie de gebruiker zijn locatie weten. Dit type noemt men location based AR. Hierbij wordt er AR-informatie gelinkt aan uw locatie. Indien u dan bijvoorbeeld naast een gebouw staat waarvan er AR-informatie bestaat zoals de naam, kan deze informatie geprojecteerd worden op dat gebouw. 
+
+
 
 \section{Google ARCore vs Apple ARKit}
 \label{sec:google-arcore-vs-apple-arkit}
@@ -18,7 +35,7 @@ Google en Apple zijn twee extreem grote bedrijven die heel veel investeren in de
 
 \subsection{Gemeenschappelijke features}
 
-De meest essentiële features in AR zoals light estimation, environmental understanding en motion tracking zijn bij beide concurrenten uiteraard geïmplementeerd maar hebben  hier en daar toch wat verschillen. 
+De meest essentiële features in AR zoals light estimation, environmental understanding en motion tracking zijn bij beide concurrenten uiteraard geïmplementeerd maar hebben hier en daar toch wat verschillen. 
 
 \textbf{Light Estimation}
 
@@ -45,10 +62,10 @@ Opdat het hierboven vermeld SLAM proces goed uitgevoerd kan worden, moet ARCore 
 
 \textbf{Reeds geïnstalleerd:}
 Daarnaast moeten Android gebruikers ook ARCore downloaden op de Play Store alvorens ze AR kunnen ervaren. Bij iPhones, iPads en iPods staat dit standaard op het toestel dus ook dit is geen probleem. Dit klinkt niet zo'n grote moeite maar het beperkt wel wederom het aantal toestellen die AR kunnen gebruiken omdat sommigen niet in staat zijn ARCore te downloaden. Google laat in sommige gevallen het toestel dit gewoon niet toe. 
- 
+
 \section{State of the Multinationals}
 \label{sec:state-of-the-multinationals}
-  
+
 
 \subsection{Google}
 De tech giant Google heeft zeker niet stil gezeten gedurende de AR-race en heeft op dinsdag 8 mei 2018 heel wat interessante onderwerpen aan bod gebracht op hun evenement Google I/O. Een van die onderwerpen was het immersive web.
@@ -56,19 +73,22 @@ De tech giant Google heeft zeker niet stil gezeten gedurende de AR-race en heeft
 \textbf{Immersive web:} 
 collectie van de opkomende technologie (VR en AR). Anders gezegd: eender wat dat het web diepte, volume, schaal en plaats geeft.
 
-Google wou hier echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is en direct om de hoek staat. Een quote van op het evenement:
- 
+Google wou hier echt benadrukken dat de technologie achter AR op het web ferm aan het evolueren is en direct om de hoek staat. Een quote van op het evenement is:
+
 \textit{``If you start using the AR/VR technologies now, they’ll be shipping in stable browsers by the time you’re comfortable using them``}
 
-Google had op Google I/O WebXR geïntroduceerd, de vervanger van de verouderde WebVR API (de technologie die het mogelijk maakt om Virtual Reality in de browser te zien). WebXR werd gebouwd aan de hand van veel feedback en stelt de VR- en AR functionaliteiten beschikbaar voor web ontwikkelaars. Sinds het evenement is WebXR enkel en alleen nog maar beschikbaar geweest in Chrome Canary, een speciale versie van Google Chrome.
- 
-Google liet op dit evenement ook een aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen. Deze voorbeelden zijn te vinden in het artikel van ~\textcite{Medley2018}. Een van die voorbeelden was met het Chacmool statue. Het Chacmool is een standbeeld dat u met AR kan plaatsen in uw omgeving en dat vervolgens ook interactie biedt. Indien u op een bepaald punt tikt op het beeld, toont het meer informatie over het standbeeld. 
+Google had op Google I/O WebXR geïntroduceerd, de vervanger van de verouderde WebVR API \footnote{API: Een verzameling van functionaliteiten en procedures die door applicaties gebruikt kunnen worden} (de technologie die het mogelijk maakt om Virtual Reality in de browser te zien). WebXR werd gebouwd aan de hand van veel feedback en stelt de VR- en AR functionaliteiten beschikbaar voor web ontwikkelaars. Sinds het evenement is WebXR enkel en alleen nog maar beschikbaar geweest in Chrome Canary, een speciale versie van Google Chrome.
+
+Google liet op dit evenement ook een aantal voorbeelden van AR op het web zien die u als gebruiker ook zelf eens kan testen. Deze voorbeelden zijn te vinden in het artikel van ~\textcite{Medley2018}. Een van die voorbeelden was met het Chacmool statue. Het Chacmool is een standbeeld dat u met AR kan plaatsen in uw omgeving en dat vervolgens ook interactie biedt. Indien u op een bepaald punt tikt op het beeld, toont het meer informatie over het standbeeld. Dit wordt gedaan aan de hand van zogenaamde hit tests. 
+
+\textbf{Hit tests:} 
+Om te weten hoe 3D-objecten in de omgeving moet plaatsen worden er vanuit de camera van het toestel stralen uitgezonden die de kruising met de echte wereld proberen te vinden. Indien zo'n kruising gevonden wordt spreekt men van een hit test. 
 
 Een ander testbaar voorbeeld van Google is raadpleegbaar via de artikels van ~\textcite{Stanush2018} en ~\textcite{Ali2018}. 
 Dit project is een voorbeeld van een artikelpagina zoals Wikipedia waarin er een astronaut wordt beschreven en weergegeven via AR. Hoewel dit project downloadbaar is via Github, is dit niet zo eenvoudig te begrijpen, aangezien het niet gedocumenteerd is. 
- 
- Daarnaast heeft Google ook nog een handleiding. Deze lijkt op het eerste gezicht perfect maar bevat bij nader inzien een aantal moeilijkheden en vragen. 
- In deze handleiding leert u hoe u gebruik maakt van de WebXR API, hoe een vlak kan gevonden worden met zogenaamde AR hit tests en hoe een 3D-model kan geladen en gesynchroniseerd worden met de echte wereld. Tijdens het uitproberen van deze handleiding werd al snel duidelijk dat het niet eenvoudig is. Aangezien er op het moment dat de handleiding uitgebracht werd nog steeds veel aanpassingen gebeurden aan de WebXR API, zijn de versies van Chrome Canary boven 72 niet in staat deze handleiding uit te voeren. U moet dus eerst een verouderde versie van Chrome Canary downloaden, wat niet meer te vinden is op de Play Store. Hiervoor moet u wat graven op het internet. Dit op zich is niet zo moeilijk, maar een verouderde versie te downloaden creëert natuurlijk de volgende vraag: is deze handleiding dan nog nuttig? Het antwoord hierop is op dit moment onduidelijk. Om alsnog de handleiding te volgen moet uw toestel aan de hierboven vermelde compatibiliteitsvoorwaarden voldoen en zet u een Web Server op waarop u uw website gaat maken. 
+
+Daarnaast heeft Google ook nog een handleiding. Deze lijkt op het eerste gezicht perfect maar bevat bij nader inzien een aantal moeilijkheden en vragen. 
+In deze handleiding leert u hoe u gebruik maakt van de WebXR API, hoe een vlak kan gevonden worden met AR hit tests en hoe een 3D-model kan geladen en gesynchroniseerd worden met de echte wereld. Tijdens het uitproberen van deze handleiding werd al snel duidelijk dat het niet eenvoudig is. Aangezien er op het moment dat de handleiding uitgebracht werd nog steeds veel aanpassingen gebeurden aan de WebXR API, zijn de versies van Chrome Canary boven 72 niet in staat deze handleiding uit te voeren. U moet dus eerst een verouderde versie van Chrome Canary downloaden, wat niet meer te vinden is op de Play Store. Hiervoor moet u wat graven op het internet. Dit op zich is niet zo moeilijk, maar een verouderde versie te downloaden creëert natuurlijk de volgende vraag: is deze handleiding dan nog nuttig? Het antwoord hierop is op dit moment onduidelijk. Om alsnog de handleiding te volgen moet uw toestel aan de hierboven vermelde compatibiliteitsvoorwaarden voldoen en zet u een Web Server op waarop u uw website gaat maken. 
 
 
 \subsection{Apple}
@@ -85,10 +105,68 @@ Hoe u als ontwikkelaar verder aan de slag kan gaan met dit bestandstype en waar 
 
 Het nadeel van AR Quick Look is dat het buiten het visualiseren, het echter geen aangepaste of unieke interactie biedt. Er kan dus bijvoorbeeld niet op geklikt worden om extra informatie toe te voegen. Het is ook niet mogelijk dit zelf te ontwikkelen aangezien Apple dit naar gewoonte afgeschermd heeft. 
 
+\subsection{Updates 2019}
+Apple kon met behulp van AR Quick Look heel veel fans enthousiast maken om met het .usdz formaat aan de slag te gaan. Om te besparen op tijd aan codeerwerk zouden bedrijven zich om die reden ook kunnen focussen op iOS.. Maar waar Apple eerst nog een soort van monopolie op had, heeft Google op 8 mei 2019 de kloof gedicht en bieden zij nu ook een heel simpele manier om 3D-objecten te implementeren op uw website. ~\textcite{Medley2019} had in februari 2019 al een html-component geïntroduceerd genaamd model-viewer. Deze component gecombineerd met enkele javascript scripts liet u toe op een simpele manier een 3D-object te laden in uw website. Weliswaar zonder AR functionaliteit. Echter in de laatste update van ~\textcite{Google2019} op 8 februari 2019 hebben ze AR  functionaliteiten toegevoegd met daar bovenop nog eens ondersteuning voor Magic Leap\footnote{Magic Leap: Een bril te vergelijken met de Microsoft Hololens waarmee u AR-ervaringen kan beleven} en Quick Look voor iOS. 
+
+
+In figuur \ref{fig:modelviewerhtml} zijn er een aantal mogelijke parameters te zien waarmee u het gedrag van het object alsook aspecten die invloed hebben op het object kan veranderen. Om even op te sommen:
+
+\begin{itemize}
+	\item \textbf{src:} het attribuut src definieert van waar het 3D-model geladen moet worden.
+	\item \textbf{alt:} voor toegankelijkheidsredenen wordt het alt attribuut ingesteld op een korte beschrijving 
+	\item \textbf{auto-rotate:} zoals de naam het verklapt zal het object indien geladen rustig maar blijven draaien. Dit geeft de gebruiker het gevoel dat het geen statische foto is maar een 3D-model 
+	\item \textbf{camera-controls:} indien dit attribuut ingesteld is kan de gebruiker het object draaien naar eigen wens 
+	\item \textbf{environment-image:} Dit attribuut dient om een scene met een specifieke belichting configuratie in te stellen. Het object wordt dan in die onzichtbare scene gezet waardoor het licht vanuit die scene kan gereflecteerd worden op het model. Indien dit attribuut niet ingesteld is wordt er een standaard scene ingesteld. 
+	\item \textbf{stage-light-intensity:} Hiermee kan de intensiteit van licht op het model gewijzigd worden
+	\item \textbf{environment-intensity:} Ook hiermee kan de intensiteit van licht op het model gewijzigd worden
+	\item \textbf{shadow-intensity:} Hiermee kan de intensiteit van de shadow gecreëerd door het licht vanuit de scene aangepast worden 
+	\item \textbf{ar:} Dit is het zojuist toegevoegde attribuut, dit vertelt het apparaat dat er een AR-ervaring kan gestart worden en voegt een AR-icoontje toe op de website 
+	\item \textbf{ios-src:} voor de iOS-gebruikers kan er verwezen worden naar een .usdz model.
+\end{itemize}
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{img/modelviewerhtml.png}
+	\caption{De configuratie van de html-component model-viewer.}
+	\label{fig:modelviewerhtml}
+\end{figure}
+
+Verder bevat de model-viewer component ook de optie om te spelen met de animaties van het 3D object, indien deze reeds gedefinieerd zijn in het model zelf. Ook kan er een hoge resolutie 360 graden achtergrondfoto ingesteld worden waardoor het lijkt dat het object zich in die omgeving bevindt. Indien dit bijvoorbeeld een foto van een hangaar zou zijn dan spiegelen alle lichtstralen vanuit die hanger op het object. 
+
+\textbf{Concreet}
+
+Standaard krijgen alle gebruikers het 3D-model te zien indien ze op dit moment naar een website surfen waarbij model-viewer geïmplementeerd is. In de onderstaande tabel is te zien wat er gebeurt voor de gebruikers indien er bij het model-viewer element de parameters uit de eerste kolom zijn toegevoegd
+
+\begin{center}
+	\begin{tabular}{| c | p{4.8cm} | p{4.8cm} |}
+		\hline
+		Ingesteld & iOS gebruikers + Chrome & iOS gebruikers + Safari \\ \hline 
+		ar | ios-src & AR Quick Look opent dit object niet & AR Quick Look opent dit object wel en de gebruiker kan het plaatsen  \\ \hline
+		ios-src & AR Quick Look opent dit object niet & AR Quick Look opent dit object wel en de gebruiker kan het plaatsen \\ \hline
+		
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{| c | p{2.35cm} | p{2.35cm} | p{2.35cm} | p{2.35cm} |}
+		\hline
+		Ingesteld & Android vader & Android moeder & OnePlus 5 & Samsung S7 \\ \hline 
+		ar & Getest op android met chrome en canary 72 maar lukt niet? & Luk niet  & Lukt wel & Lukt wel  \\ \hline
+		ar | ios-src & Getest op android met chrome en canary 72 maar lukt niet? & Luk niet  & Lukt wel & Lukt wel \\ \hline
+		
+	\end{tabular}
+\end{center}
+
+
+Een puntje om hierbij op aan te merken is dat indien ontwikkelaars er voor kiezen het 3D-model te implementeren met de model-viewer component, iOS gebruikers die surfen vanop Google Chrome niet meer het model zullen kunnen zien. In tegenstelling tot Safari waar de browser het .usdz bestand herkent en daarom opent met Quick Look herkent Chrome op iOS het bestand niet en probeert het gewoon te downloaden. Eenmaal gedownload weet Chrome niet wat hij er mee moet doen en vraagt u het te openen met een ander programma. 
+
 \section{Een derde optie}
 \label{sec:een-derde-optie}
 
-Naast de technologieën en implementeerbaarheid van de twee tech giants Google en Apple, zijn er ook nog enkele andere opties. Een daarvan is het product 8th Wall Web van het bedrijf 8th Wall. Hierbij kan u sinds 25 februari 2019 tegen een bepaalde prijs op een webplatform een Web AR applicatie ontwikkelen die u vervolgens op uw website kan plaatsen. Volgens de beschikbare demo's kan er met hun product extra interactie geïmplementeerd worden zoals het smijten van een object of het stappen door een portaal (die u naar een andere wereld brengt). Echter blijken deze AR-ervaringen niet zo soepel te zijn als de simpelere visualisatietechniek van Apple en Google. Het gebruik van dit product wordt in deze bachelorproef niet verder toegelicht.
+Naast de technologieën en implementeerbaarheid van de twee tech giants Google en Apple, zijn er ook nog enkele andere opties. Een daarvan is het product 8th Wall Web van het bedrijf 8th Wall. Hierbij kan u sinds 25 februari 2019 tegen een bepaalde prijs op een webplatform een Web AR applicatie ontwikkelen die u vervolgens op uw website kan plaatsen. Volgens de beschikbare demo's kan er met hun product extra interactie geïmplementeerd worden zoals het smijten van een object of het stappen door een portaal (die u naar een andere wereld brengt). Echter blijken deze AR-ervaringen niet zo soepel te zijn als de simpelere visualisatietechniek van Apple en Google. 
+
+Vectary is een tweede voorbeeld die tot 13 maart 2019 een uitstekende online service was waarmee u 3D objecten kon maken en exporteren naar uw gewenste 3D bestandsformaat. Sinds deze specifieke dag biedt Vectary ook tegen een bepaalde prijs de mogelijkheid een 3D object of omgeving in uw website te steken.~\autocite{Vectary2019}
+
+Het gebruik van deze 2 producten wordt in deze bachelorproef niet verder toegelicht.
 
 %De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 

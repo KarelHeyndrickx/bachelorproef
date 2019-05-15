@@ -25,12 +25,13 @@
   year = {2009}
 }
 
-@Article{Medley2018,
-  author  = {Joseph Medley},
-  title   = {Augmented reality for the web},
-  journal = {Augmented reality for the web},
-  year    = {2018},
-  url     = {https://developers.google.com/web/updates/2018/06/ar-for-the-web},
+@TechReport{Medley2018,
+  author      = {Joseph Medley},
+  title       = {Augmented reality for the web},
+  institution = {Google},
+  year        = {2018},
+  url         = {https://developers.google.com/web/updates/2018/06/ar-for-the-web},
+  journal     = {Augmented reality for the web},
 }
 
 @WWW{GoogleDevices2019,
@@ -56,6 +57,56 @@
   title  = {Integrating Apps and Content with AR Quick Look},
   year   = {2018},
   url    = {https://developer.apple.com/videos/play/wwdc2018/603/},
+}
+
+@WWW{Google2018,
+  author = {Google},
+  editor = {Google},
+  title  = {WebARonARKit},
+  year   = {2018},
+  url    = {https://github.com/google-ar/WebARonARKit},
+}
+
+@TechReport{Google2019,
+  author      = {Google},
+  title       = {Augmented reality with model-viewer},
+  institution = {Google},
+  year        = {2019},
+  date        = {2019-05-08},
+  url         = {https://developers.google.com/web/updates/2019/05/model-viewer-ar},
+}
+
+@TechReport{Medley2019,
+  author      = {Joseph Medley},
+  title       = {The model-viewer web component},
+  institution = {Google},
+  year        = {2019},
+  url         = {https://developers.google.com/web/updates/2019/02/model-viewer},
+}
+
+@TechReport{Vectary2019,
+  author      = {Vectary},
+  title       = {How to prepare web embed in Vectary},
+  institution = {Vectary},
+  year        = {2019},
+  date        = {2019-03-13},
+  url         = {https://www.vectary.com/3d-modeling-how-to/3D-web-embed-guide},
+}
+
+@Article{Nedrich2019,
+  author  = {Matt Nedrich},
+  title   = {Compressing 3D Model Files with Draco},
+  journal = {Compressing 3D Model Files with Draco},
+  year    = {2018},
+  date    = {2018-09-30},
+  url     = {https://spin.atomicobject.com/2018/09/30/compress-3d-files-draco/},
+}
+
+@WWW{Webxr2019,
+  author = {Webxr},
+  editor = {Google},
+  year   = {2019},
+  url    = {https://github.com/immersive-web/webxr},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
